@@ -9,9 +9,9 @@ jobs:
       - deploy:
           command: |
             if [ "${CIRCLE_BRANCH}" == "staging" ]; then
-              ./bin/deploy/staging-deploy.sh
+              ./bin/staging-deploy.sh
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-              ./bin/deploy/master-deploy.sh
+              ./bin/master-deploy.sh
             fi
 
   # test:
