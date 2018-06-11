@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build: ./
+    image: portfolio_continuos_integration
+    ports:
+      - "80:80"
+    # ports:
+    # # ssh
+    # - "2222:22"
+    # # browser sync
+    # - "3000:3000"
+    # # external browser sync
+    # - "3001:3001"
