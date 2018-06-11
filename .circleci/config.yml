@@ -6,14 +6,13 @@ jobs:
     steps:
       - checkout
       # - run: <command>
-
-    - deploy:
-        command: |
-          if [ "${CIRCLE_BRANCH}" == "staging" ]; then
-            ./bin/deploy/staging-deploy.sh
-          elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-            ./bin/deploy/master-deploy.sh
-          fi
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "staging" ]; then
+              ./bin/deploy/staging-deploy.sh
+            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./bin/deploy/master-deploy.sh
+            fi
 
   # test:
   #   docker:
