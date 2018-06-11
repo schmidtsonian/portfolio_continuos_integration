@@ -10,7 +10,7 @@ STG_IP=167.99.103.9
 STG_USER=esteban
 STG_DIR=html/
 
-PROD_IP=167.99.103.9
-# PROD_DOMAIN=nanome.ai
-PROD_USER=esteban
-STG_DIR=html/
+MASTER_IP=167.99.103.9
+# MASTER_DOMAIN=nanome.ai
+MASTER_USER=esteban
+MASTER_DIR=html/
