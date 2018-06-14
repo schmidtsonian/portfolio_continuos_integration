@@ -3,7 +3,7 @@ module.exports = ( () => {
   // PROJECT
   const project = {
     src:  './src',
-    dest: './public',
+    dest: './../public',
     port: 8080
   };
 

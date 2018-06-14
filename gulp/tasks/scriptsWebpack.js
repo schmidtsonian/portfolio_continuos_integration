@@ -31,10 +31,10 @@ module.exports = (gulp, config, browserSync, isProduction, plugins) => {
             jQuery: 'jquery',
             hammerjs: 'hammerjs',
           }),
-          new plugins.webpack.optimize.UglifyJsPlugin({
-            compressor: {warnings: false},
-            output: {comments: false},
-          }),
+          // new plugins.webpack.optimize.UglifyJsPlugin({
+          //   compressor: {warnings: false},
+          //   output: {comments: false},
+          // }),
         ]
       }))
       .pipe(gulp.dest(config.scripts.dest))
